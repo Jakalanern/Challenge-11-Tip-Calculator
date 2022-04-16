@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Challenge #11</title>
+  </head>
+  <body>
+    <div class="main_box">
+      <div class="result_box">
+        <div class="x">X</div>
+        <h1>Total Bill:</h1>
+        <h2 class="result bill"></h2>
+        <h1>Each Person's Bill:</h1>
+        <h2 class="result each-bill"></h2>
+        <h1>Total Tip:</h1>
+        <h2 class="result tip"></h2>
+        <h1>Each Person Tips:</h1>
+        <h2 class="result each-tip"></h2>
+      </div>
+      <div class="container">
+        <div class="title">TIP CALCULATOR</div>
+        <div class="disclaimer_box">
+          <p>Bill Amount Cannot Be Blank</p>
+          <p>Number Of Users Must Be Greater Than Zero</p>
+          <p>You Must Select A Service</p>
+        </div>
+        <div class="amount_box input-container">
+          <h2>How Much Was Your Bill?</h2>
+          <div class="input_box">
+            <div class="amount_logo logo">
+              <img src="./logo/dollar-symbol.png" alt="" />
+            </div>
+            <input type="number" class="amount_input" />
+          </div>
+        </div>
+        <div class="people_box input-container">
+          <h2>How Many People Sharing The Bill?</h2>
+          <div class="input_box">
+            <div class="people_logo logo">
+              <img src="./logo/user.png" alt="" />
+            </div>
+            <input type="text" class="people_input" />
+          </div>
+        </div>
+        <div class="service_box input-container">
+          <h2>How Was Your Service</h2>
+          <select placeholder="Choose..." name="" id="" class="service_input">
+            <option value="" selected disabled>Choose...</option>
+            <option value="1">Poor</option>
+            <option value="2">Okay</option>
+            <option value="3">Good</option>
+            <option value="4">Awesome</option>
+          </select>
+        </div>
+        <button class="calc_btn">Calculate</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
